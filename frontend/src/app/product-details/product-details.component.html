@@ -1,0 +1,88 @@
+<div class="mx-auto border border-dark">
+  <div class="row g-0">
+    <div class="col-5 px-3">
+
+      <div class="d-flex justify-content-center align-items-center" style="border-radius: 4px;">
+        <img src=" https://ii1.pepperfry.com/media/catalog/product/n/i/568x284/nirvana-lhs-sofa-in-grey-colour-by-dreamzz-furniture-nirvana-lhs-sofa-in-grey-colour-by-dreamzz-furn-bkihnc.jpg" class="w-100" style="height: 300px;" alt="dd">
+      </div>
+      <div class="image-thumbnails d-flex mt-4 justify-content-between align-items-center">
+        <img src="https://st2.depositphotos.com/35063146/41993/i/950/depositphotos_419935162-stock-photo-frame-mockup-farmhouse-living-room.jpg?forcejpeg=true" alt="dj">
+        <img src="https://ii1.pepperfry.com/media/catalog/product/b/e/568x284/beguiling-leatherette-three-seater-sofa-captain-in-black-colour-by-dreamzz-furniture-beguiling-leath-ntqr20.jpg" alt="dj">
+        <img src="https://i.pinimg.com/originals/cd/d2/81/cdd2819fa315f85f30562707342c62b2.jpg" alt="dj">
+        <img src="https://i.etsystatic.com/9554443/r/il/b1955d/1623533372/il_570xN.1623533372_hf9f.jpg" alt="dj">
+        <img src="https://i.etsystatic.com/9554443/r/il/8ff28b/1671056887/il_570xN.1671056887_8kei.jpg" alt="dj">
+      </div>
+    </div>
+    <div class="col-7">
+      <div class="card">
+        <div class="card-header">
+          <h4>Header</h4>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title text-success">Final Price
+            <span class="text-primary">-20%</span>
+          </h3>
+          <h4 class="card-subtitle text-danger text-decoration-line-through">
+            Original Price
+          </h4>
+        </div>
+        <div class="card-body">
+          <h6 class="card-subtitle my-2 text-primary">11 products are left</h6>
+          <div class="d-grid gap-2">
+            <button type="button" class="btn btn-outline-success">Add to Cart</button>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-text">Description</h5>
+          <ul class="list-group">
+            <li class="list-group-item list-group-item-action" *ngFor="let desc of [1,1,1,1,1,1]">
+              {{desc}}
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="row g-0">
+    <div class="col-12 ps-5 pt-4 pb-3">
+      <h4  style="border-radius: 20px;" class="border border-secondary text-center py-2 w-25">Related Products</h4>
+    </div>
+    <div class="col-12">
+      <app-suggested-product></app-suggested-product>
+    </div>
+  </div>
+  <div class="row p-2">
+   <div class="col p-3">
+    <h5>Give Your Review</h5>
+    <h6 class="mt-5">Write Your Review</h6>
+    <textarea class="w-75 p-2"></textarea>
+    <div class="d-flex align-items-start">
+      <button class="btn btn-outline-secondary mt-4 me-5">Save Review</button>
+      <div>
+        <h6 class="text-danger mt-4">Login First then enter Review</h6>
+        <h6 class="text-danger">Review rating can not be Empty !</h6>
+        <h6 class="text-success">Review saved Successfully</h6>
+
+      </div>
+    </div>
+   </div>
+   <div class="col p-3">
+    <h5>Other Review</h5>
+    <p *ngIf="1">No review Yet !</p>
+    <div class="card mt-3" *ngFor="let review of [1,2,3]">
+      <div class="card-header d-flex justify-content-between">
+        <div class="card-text">Shivam Upadhyay</div>
+        <div class="card-text fst-italic">
+          Review on : <span class="fw-bold">{{"20 Nov 2022"}}</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-text">Reviews</div>
+      </div>
+    </div>
+
+   </div>
+  </div>
+</div>

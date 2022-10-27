@@ -1,0 +1,15 @@
+<div class="mx-auto border border-dark">
+  <div *ngFor="let suggestedProduct of suggestedProducts" class="mb-4 overflow-hidden">
+    <div class="product-banner position-relative">
+      <!-- <div class="about-banner">
+        <h4>Shop with discount of upto 50% First check the review of products</h4>
+      </div> -->
+      <button class="btn btn-outline-info btn-lg" type="button">Shop now</button>
+     <img src={{suggestedProduct.banner}} alt={{suggestedProduct.category.id}} class="w-100">
+    </div>
+    <div class="product-list py-5">
+     <app-suggested-product [category]="suggestedProduct.category"></app-suggested-product>
+    </div>
+
+  </div>
+</div>

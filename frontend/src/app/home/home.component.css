@@ -1,0 +1,19 @@
+.product-banner button{
+  position: absolute;
+  top: 85%;
+  left: 7%;
+  color: burlywood;
+}
+
+.product-banner .about-banner{
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  width: 40%;
+}
+.about-banner h4{
+  color: burlywood;
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}

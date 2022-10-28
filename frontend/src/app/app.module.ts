@@ -14,6 +14,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { OpenProductsDirective } from './open-products.directive';
+import { OpenProductsDeatilDirective } from './open-products-deatil.directive';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { OpenProductsDirective } from './open-products.directive';
     HeaderComponent,
     FooterComponent,
     PagenotfoundComponent,
-    OpenProductsDirective
+    OpenProductsDirective,
+    OpenProductsDeatilDirective,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

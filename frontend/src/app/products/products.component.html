@@ -1,14 +1,15 @@
 <div class="grid-view" *ngIf="view==='grid'">
-  <div class="card">
+  <div class="card text-center">
     <div class="card-header">
       Header
     </div>
-    <div>
-      <img src="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=600" alt="gs" class="card-img-top">
+    <div class="overflow-hidden d-flex justify-content-center align-items-center">
+      <img src="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=600" alt="gs" class="card-img-top"
+       appOpenProductsDeatil [productId]="1" >
     </div>
     <div class="card-body">
       <h5 class="card-title title">Title</h5>
-      <h6 class="card-subtitle mb-2 text-primary">12 products are available</h6>
+      <h6 class="card-subtitle my-2 text-primary">12 products are available</h6>
       <p class="card-text description">Description</p>
     </div>
     <div class="card-body">
@@ -28,7 +29,7 @@
   <div class="card">
     <div class="row">
       <div class="col-md-5 overflow-hidden d-flex justify-content-center align-items-center">
-        <img src="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=600" alt="gs" class="img-fluid rounded-start" style="height: 100%;">
+        <img   appOpenProductsDeatil [productId]="1"  src="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=600" alt="gs" class="img-fluid w-100 rounded-start" style="height: 100%;">
       </div>
       <div class="col d-flex flex-column">
         <div class="card-header text-center">Header</div>
@@ -57,7 +58,7 @@
   <div class="card">
     <div class="row g-0">
       <div class="col-4 overflow-hidden d-flex justify-content-center align-items-center">
-        <img src="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=600" alt="dd" class="img-fluid p-2 rounded-start" style="height:200px;">
+        <img   appOpenProductsDeatil [productId]="1"  src="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=600" alt="dd" class="img-fluid p-2 rounded-start" style="height:200px;">
         </div>
         <div class="col-8">
           <div class="card-body">
@@ -81,7 +82,7 @@
 <div class="cart-item-view" *ngIf="view==='previouscartitem'">
   <div class="card text-center">
     <div class="overflow-hidden d-flex justify-content-center align-items-center">
-      <img src="https://images.pexels.com/photos/307006/pexels-photo-307006.jpeg?auto=compress&cs=tinysrgb&w=600" alt="dd" class="card-item-top w-100">
+      <img   appOpenProductsDeatil [productId]="1"  src="https://images.pexels.com/photos/307006/pexels-photo-307006.jpeg?auto=compress&cs=tinysrgb&w=600" alt="dd" class="card-item-top w-100">
     </div>
     <div class="card-body">
       <h5 class="card-title title">Title</h5>

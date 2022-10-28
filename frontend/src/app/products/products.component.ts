@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-  @Input() view:'grid' | 'list' |'currentcartitem' | 'previouscartitem'= 'grid'
+  @Input() view:'grid' | 'list' |'currentcartitem' | 'previouscartitem'= 'grid';
 
   constructor() { }
 

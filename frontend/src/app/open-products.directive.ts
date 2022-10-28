@@ -12,7 +12,7 @@ export class OpenProductsDirective {
   };
 
   @HostListener('click') openProducts(){
-    this.router.navigate(['/products'],{
+    this.router.navigate(['/shop'],{
       queryParams:{
         category:this.category.category,
         subcategory:this.category.subcategory

@@ -1,8 +1,9 @@
 import { Component, ElementRef, OnInit, Type, ViewChild, ViewContainerRef } from '@angular/core';
 import { LoginComponent } from '../login/login.component';
 import { NavigationItem } from '../models/models';
+import { ProductsService } from '../products.service';
 import { RegisterComponent } from '../register/register.component';
-
+import { Category } from '../models/models';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -23,9 +24,12 @@ export class HeaderComponent implements OnInit {
       subcategories:['chairs','tables']
     }
   ]
-  constructor() { }
+  constructor(private productsService:ProductsService) { }
 
   ngOnInit(): void {
+    this.productsService.getCategoryList().subscribe(()=>{
+
+    })
   }
 
   openModal(name:string){
